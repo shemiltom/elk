@@ -1,4 +1,3 @@
-cat << 'EOF' > xvwa.sql
 CREATE TABLE IF NOT EXISTS users (
   userid int(11) NOT NULL AUTO_INCREMENT,
   username varchar(50) NOT NULL,
@@ -13,4 +12,3 @@ INSERT INTO users (username, password, email, profile, secret) VALUES
 ('admin', 'admin', 'admin@xvwa.local', 'Administrator', 'SuperSecretAdminKey'),
 ('xvwa', 'xvwa', 'xvwa@xvwa.local', 'Normal User', 'UserSecretKey')
 ON DUPLICATE KEY UPDATE userid=userid;
-EOF
