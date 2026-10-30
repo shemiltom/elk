@@ -1,0 +1,1 @@
+sudo sed -i '1a mysqli_report(MYSQLI_REPORT_OFF);' /var/www/html/xvwa/config.php
